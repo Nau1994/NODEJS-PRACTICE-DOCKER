@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  db:
+    container_name: postgres_container
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=shop
+    # networks:
+    #   - custnetworks
+
+  app:
+    container_name: nodejs_container
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - ENV=DEV
+    develop:
+      watch:
+        - action: rebuild
+          path: .
+    # networks:
+    #   - custnetworks
+    
+  
+# networks:
+#   custnetworks:
+#     name: myNetwork
+#     external: true

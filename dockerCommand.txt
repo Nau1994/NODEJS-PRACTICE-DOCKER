@@ -1,0 +1,52 @@
+---mongo start command
+-----default
+docker run -d --rm --name mongo-container -p 27017:27017 mongo
+docker ps
+docker stop mongo-container
+docker rm mongo-container
+docker exec -it mongo-container bash
+	#mongosh
+
+---custome
+docker run -d --rm --name mongo-container \
+	-p 27017:27017 \
+	-e MONGO_INITDB_ROOT_USERNAME='root' \
+	-e MONGO_INITDB_ROOT_PASSWORD='root' \
+	-v mongoData:/data/db \
+	mongo
+
+docker exec -it mongo-container bash
+	#mongosh -u root -p root
+
+docker volume remove mongoData
+
+------------postgre-----------
+	
+-----default
+
+docker run -d --rm --name postgres-container -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=shop postgres
+
+---custome
+docker run -d --rm --name postgres-container \
+	-p 5432:5432 \
+	-e POSTGRES_PASSWORD=postgres\
+	-e POSTGRES_USER=root\
+	postgres
+
+
+# su postgres
+$ psql
+# \l
+# \c "db"
+# \d
+
+
+
+-------------------------------------------
+docker build -t node-js-app .
+
+docker run -d --rm --name node-js-container -p 8080:8080 node-js-app
+docker run --rm --name node-js-container -p 8080:8080 node-js-app
+
+
+
