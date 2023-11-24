@@ -4,8 +4,6 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -13,12 +11,12 @@ export class AppComponent {
   title = 'Toggel List';
   todos:{id:number,todo:String}[]=[]
   length=0
-  todoInput:any=''
-  addTodo(todo:String){
+  todoInput:String=''
+  addTodo(){
     console.log(this.todoInput)
-    if(todo.length>0){
-      this.todos.push({id:++this.length,todo:todo})
-      console.log(this.todos)
+    if(this.todoInput.length>0){
+      this.todos.push({id:++this.length,todo:this.todoInput})
+      console.log(this.todoInput)
     }
   }
   removeTodo(id:number){
