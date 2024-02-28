@@ -24,7 +24,7 @@ docker volume remove mongoData
 	
 -----default
 
-docker run -d --rm --name postgres-container -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=shop postgres
+docker run -d --rm --name postgres-container -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=app postgres
 
 ---custome
 docker run -d --rm --name postgres-container \
