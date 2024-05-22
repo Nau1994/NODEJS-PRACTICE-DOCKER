@@ -1,6 +1,7 @@
 ---mongo start command
 -----default
 docker run -d --rm --name mongo-container -p 27017:27017 mongo
+docker run -d --rm --name mongo-container -p 27017:27017 -e MONGO_INITDB_DATABASE=app mongo
 docker ps
 docker stop mongo-container
 docker rm mongo-container
@@ -33,6 +34,7 @@ docker run -d --rm --name postgres-container \
 	-e POSTGRES_USER=root\
 	postgres
 
+psql -U postgres -d mydb -c "select * from user;"
 
 # su postgres
 $ psql
@@ -40,6 +42,10 @@ $ psql
 # \c "db"
 # \d
 
+INSERT INTO users ("user-name") VALUES ("naushad");
+SELECT * FROM users;
+
+INSERT INTO posts (titile,"authorId") VALUES ('hakunama tata',1);
 
 
 -------------------------------------------

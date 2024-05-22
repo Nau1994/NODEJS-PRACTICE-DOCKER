@@ -1,0 +1,132 @@
+{
+    "name": "nagaro_practice",
+    "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice",
+    "type": "folder",
+    "contents": [
+        {
+            "name": ".env",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\.env",
+            "type": "file",
+            "size": 509
+        },
+        {
+            "name": ".gitignore",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\.gitignore",
+            "type": "file",
+            "size": 2047
+        },
+        {
+            "name": "controller",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\controller",
+            "type": "folder",
+            "contents": [
+                {
+                    "name": "todos.js",
+                    "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\controller\\todos.js",
+                    "type": "file",
+                    "size": 930
+                },
+                {
+                    "name": "users.js",
+                    "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\controller\\users.js",
+                    "type": "file",
+                    "size": 622
+                }
+            ]
+        },
+        {
+            "name": "expressRoute",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\expressRoute",
+            "type": "folder",
+            "contents": [
+                {
+                    "name": "app.js",
+                    "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\expressRoute\\app.js",
+                    "type": "file",
+                    "size": 845
+                }
+            ]
+        },
+        {
+            "name": "file.json",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\file.json",
+            "type": "file",
+            "size": 4610
+        },
+        {
+            "name": "graphql",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\graphql",
+            "type": "folder",
+            "contents": [
+                {
+                    "name": "createServer.mjs",
+                    "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\graphql\\createServer.mjs",
+                    "type": "file",
+                    "size": 2526
+                }
+            ]
+        },
+        {
+            "name": "index.mjs",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\index.mjs",
+            "type": "file",
+            "size": 703
+        },
+        {
+            "name": "node_modules",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\node_modules",
+            "type": "folder",
+            "contents": []
+        },
+        {
+            "name": "package-lock.json",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\package-lock.json",
+            "type": "file",
+            "size": 74049
+        },
+        {
+            "name": "package.json",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\package.json",
+            "type": "file",
+            "size": 404
+        },
+        {
+            "name": "prisma",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\prisma",
+            "type": "folder",
+            "contents": [
+                {
+                    "name": "migrations",
+                    "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\prisma\\migrations",
+                    "type": "folder",
+                    "contents": []
+                },
+                {
+                    "name": "schema.prisma",
+                    "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\prisma\\schema.prisma",
+                    "type": "file",
+                    "size": 557
+                }
+            ]
+        },
+        {
+            "name": "readdirSync.js",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\readdirSync.js",
+            "type": "file",
+            "size": 1569
+        },
+        {
+            "name": "UserInMongo",
+            "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\UserInMongo",
+            "type": "folder",
+            "contents": [
+                {
+                    "name": "userSchema.js",
+                    "path": "P:\\0-SDE-Preperation\\NodsJSPractice\\nagaro_practice\\UserInMongo\\userSchema.js",
+                    "type": "file",
+                    "size": 174
+                }
+            ]
+        }
+    ]
+}
